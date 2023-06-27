@@ -1,5 +1,5 @@
-<form [formGroup]="formGroup" (ngSubmit)="submit()">
-  <div>
+<form [formGroup]="formGroup" (ngSubmit)="submit()" class="query-form">
+  <div class="input-field">
     <label for="query">Query:</label>
     <input type="text" id="query" formControlName="query" />
     <div
@@ -9,5 +9,7 @@
       Query is required and must be at least 2 characters long.
     </div>
   </div>
-  <button type="submit" [disabled]="formGroup.invalid">Query</button>
+  <button type="submit" [disabled]="formGroup.invalid" class="submit-button">
+    Query
+  </button>
 </form>
