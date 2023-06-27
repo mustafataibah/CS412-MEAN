@@ -13,7 +13,8 @@ bower_components/
 # IDEs and editors
 .idea/
 
-.vscode 
+.vscode/
+
 # misc
 .sass-cache/
 connect.lock/
