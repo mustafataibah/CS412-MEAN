@@ -1,0 +1,13 @@
+<form [formGroup]="formGroup" (ngSubmit)="submit()">
+  <div>
+    <label for="query">Query:</label>
+    <input type="text" id="query" formControlName="query" />
+    <div
+      *ngIf="formGroup.get('query')!.invalid && formGroup.get('query')!.dirty"
+      class="error"
+    >
+      Query is required and must be at least 2 characters long.
+    </div>
+  </div>
+  <button type="submit" [disabled]="formGroup.invalid">Query</button>
+</form>
